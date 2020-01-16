@@ -24,7 +24,7 @@ class CashRegister
   end 
   
   def apply_discount
-    if @discount > 0
+    if @items > 0
       @discount  = @discount/100.to_f
       @total = @total - (@total * (@discount))
       @total = @total.round(-2)
